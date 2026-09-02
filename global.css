@@ -1,13 +1,12 @@
 body{
   background-color: rgb(34, 31, 31);
   color: white;
+
 }
 .navbar{
   text-align: center;
 }
-h1{
-  text-align: center;
-}
+
 .logo{
 width:950px;
 height:200px;
@@ -22,12 +21,22 @@ p{
 h2{
   font-family:'Times New Roman', Times, serif;
 }
-.gotham-skyline{
-  width: 100%;
-  height: auto;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+h1{
+  background-color: black;
 }
-.image-container{
-  position:relative;
+#image-container{
+  min-height: 100dvh;
+  min-width:100%;
+  /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); */
+  background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(34, 31, 31) 90%), url(./images/gotham-skyline.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.color-container {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
 }
